@@ -1,3 +1,4 @@
+## Setting up local version
 ```
 cd <code-base-dir>
 git clone <git-project-url>
@@ -6,9 +7,18 @@ git config --global user.name "kiranmova"
 git config --global user.email "kiran.mova@cloudbyteinc.com"
 git config --global core.pager "less -r" 
 git config -l
+```
 
-git fetch && git checkout <branch-name>
+## List and switch to remote branch
+```
+git fetch
+git branch -r
+git checkout <branch-name>
 git branch
+```
+
+## Push the modified changes to remote branch
+```
 git status
 git commit -a -m "<comment for checkin>"
 git push
