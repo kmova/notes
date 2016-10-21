@@ -23,3 +23,9 @@ git status
 git commit -a -m "<comment for checkin>"
 git push
 ```
+## Clear dirty/temporary changes
+```
+git stash
+git stash clear
+git stash show
+```
