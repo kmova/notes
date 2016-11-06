@@ -1,5 +1,17 @@
 Musings on Getting DevOps (Culture) to Storage 
 
+In addition to the traditional storage requirements (Reliability, Snapshots, Disaster Recovery, Encryption, QoS), the DevOps Movement requires the storage products to support the following: 
+- API Driven (Provisioning and Monitoring)
+- Faster Provisioning (Containers can be spawned in seconds)
+- High Availability with Guarenteed Latency (Resilient to underlying storage infra operations)
+- ScaleOut (#volumes) (Auto Scaling of Containers)
+- Faster Migration to new environments ( Across clusters or Cloud Providers/Hybrid Cloud )
+
+
+
+Storages Claiming Support for Containers
+- [Veritas - InfoScale] (http://www.snia.org/sites/default/files/DSI/2016/presentations/containers/CarlosCarrero_ChadRyan_Efficient_Agile_Persistent%2BStorage-v7.pdf)
+
 Fellow musers:
 - [Derek Stadniki - DevOps for Storage Management] (http://www.snia.org/sites/default/orig/DSI2015/presentations/StorMan/DerekStadniki_DevOps_For_Storage_Management.pdf)
 
