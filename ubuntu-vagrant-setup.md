@@ -23,3 +23,4 @@ sudo vagrant destroy
 #Reference
 * [Installing Vagrant and Virtual Box] (https://www.olindata.com/blog/2014/07/installing-vagrant-and-virtual-box-ubuntu-1404-lts)
 * [Vagrant docs] (https://www.vagrantup.com/docs/)
+* [Bento boxes] (https://github.com/chef/bento)
