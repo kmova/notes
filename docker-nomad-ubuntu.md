@@ -1,3 +1,4 @@
+Notes:
 - Docker logs are located in : /var/log/upstart/docker.log
 
 Links:
