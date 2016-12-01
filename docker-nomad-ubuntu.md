@@ -7,7 +7,7 @@ Links:
 - [Orchestration with Nomad and Consul] (https://sanderknape.com/2016/08/nomad-consul-multi-datacenter-container-orchestration/)
 
 Networking:
-https://runnable.com/docker/binding-docker-ports
-https://docs.docker.com/engine/userguide/networking/default_network/binding/
-http://www.dasblinkenlichten.com/docker-networking-101-host-mode/
-https://www.nomadproject.io/docs/drivers/docker.html
+- [port binding] (https://runnable.com/docker/binding-docker-ports)
+- [bridge binding] (https://docs.docker.com/engine/userguide/networking/default_network/binding/)
+- [host mode] (http://www.dasblinkenlichten.com/docker-networking-101-host-mode/)
+- [nomad docker driver] (https://www.nomadproject.io/docs/drivers/docker.html)
