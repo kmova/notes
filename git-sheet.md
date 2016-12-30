@@ -23,6 +23,14 @@ git status
 git commit -a -m "<comment for checkin>"
 git push
 ```
+
+## Make changes in local branch and push it upstream
+```
+git branch alpha-skunkie
+git checkout alpha-skunkie
+git push --set-upstream origin alpha-skunkie
+```
+
 ## Clear dirty/temporary changes
 ```
 git stash
