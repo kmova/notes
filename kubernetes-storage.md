@@ -1,0 +1,5 @@
+- https://github.com/kubernetes/community/blob/master/sig-storage/contributing.md
+- https://kubernetes.io/docs/user-guide/volumes/#flexvolume
+- https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/flexvolume
+- https://github.com/kubernetes/kubernetes/issues/32543
+- https://kubernetes.io/docs/user-guide/persistent-volumes/
