@@ -31,6 +31,12 @@ git checkout alpha-skunkie
 git push --set-upstream origin alpha-skunkie
 ```
 
+## Delete local and remove branch
+```
+git push origin --delete <branch_name>
+git branch -d <branch_name>
+```
+
 ## Clear dirty/temporary changes
 ```
 git stash
