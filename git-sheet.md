@@ -43,3 +43,14 @@ git stash
 git stash clear
 git stash show
 ```
+
+## Rebase forked with origin
+```
+git clone https://github.com/<forked-rep>.git
+git remote add upstream https://github.com/<origin-rep>.git
+git fetch upstream
+git rebase upstream/master
+#If conflicts are there resolve them and run "git resbase --continue"
+#Commit your changes
+git push -f
+```
