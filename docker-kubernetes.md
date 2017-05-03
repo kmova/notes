@@ -6,3 +6,4 @@ Getting Started:
 - https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
 - https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
 - http://blog.wercker.com/production-kubernetes-cluster-with-full-ci/cd-in-5-steps
+- http://gravitational.com/blog/kubernetes-101-workshop/
