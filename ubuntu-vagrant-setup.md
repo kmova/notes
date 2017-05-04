@@ -20,6 +20,12 @@ sudo vagrant halt
 sudo vagrant destroy
 ```
 
+Creating Vagrant Boxes
+```
+vagrant package --output /path/to/<boxname>.box
+vagrant box add /atlast/path/<boxname> /path/to/<boxname>.box
+```
+
 #Reference
 * [Installing Vagrant and Virtual Box] (https://www.olindata.com/blog/2014/07/installing-vagrant-and-virtual-box-ubuntu-1404-lts)
 * [Vagrant docs] (https://www.vagrantup.com/docs/)
