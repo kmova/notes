@@ -1,0 +1,4 @@
+The following error keeps repeating, with the flexvolume driver that was working in k8s 1.5.5
+
+May 10 03:36:55 kubeminion-01 kubelet[1234]: I0510 03:36:55.026850    1234 reconciler.go:231] VerifyControllerAttachedVolume operation started for volume "openebs/openebs-iscsi/demo-vsm1-vol1" (spec.Name: "demo-vsm1-vol1") pod "6f157797-352f-11e7-9a8b-021c6f7dbe9d" (UID: "6f157797-352f-11e7-9a8b-021c6f7dbe9d")
+May 10 03:36:55 kubeminion-01 kubelet[1234]: E0510 03:36:55.027144    1234 nestedpendingoperations.go:262] Operation for "\"openebs/openebs-iscsi/demo-vsm1-vol1\"" failed. No retries permitted until 2017-05-10 03:36:59.027104161 +0000 UTC (durationBeforeRetry 4s). Error: Volume "openebs/openebs-iscsi/demo-vsm1-vol1" (spec.Name: "demo-vsm1-vol1") pod "6f157797-352f-11e7-9a8b-021c6f7dbe9d" (UID: "6f157797-352f-11e7-9a8b-021c6f7dbe9d") has not yet been added to the list of VolumesInUse in the node's volume status
