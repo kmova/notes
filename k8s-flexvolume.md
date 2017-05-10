@@ -11,4 +11,36 @@ Changes that are causing the error:
 
 
 Options Tried to Fix the issue:
-- Diasable the kubelet flag  ( --enable-controller-attach-detach=false ), this will rollback to the old way of attaching the volumes by the kubelet. 
+
+(1) Diasable the kubelet flag  ( --enable-controller-attach-detach=false ), this will rollback to the old way of attaching the volumes by the kubelet. 
+
+Add the parameters to the service start configuration:
+
+```
+ubuntu@kubeminion-01:~$ sudo cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf 
+[Service]
+Environment="KUBELET_KUBECONFIG_ARGS=--kubeconfig=/etc/kubernetes/kubelet.conf --require-kubeconfig=true"
+Environment="KUBELET_SYSTEM_PODS_ARGS=--pod-manifest-path=/etc/kubernetes/manifests --allow-privileged=true"
+Environment="KUBELET_NETWORK_ARGS=--network-plugin=cni --cni-conf-dir=/etc/cni/net.d --cni-bin-dir=/opt/cni/bin"
+Environment="KUBELET_DNS_ARGS=--cluster-dns=10.96.0.10 --cluster-domain=cluster.local"
+Environment="KUBELET_AUTHZ_ARGS=--authorization-mode=Webhook --client-ca-file=/etc/kubernetes/pki/ca.crt"
+Environment="KUBELET_VOL_ARGS=--enable-controller-attach-detach=false"
+ExecStart=
+ExecStart=/usr/bin/kubelet $KUBELET_KUBECONFIG_ARGS $KUBELET_SYSTEM_PODS_ARGS $KUBELET_NETWORK_ARGS $KUBELET_DNS_ARGS $KUBELET_AUTHZ_ARGS $KUBELET_VOL_ARGS $KUBELET_EXTRA_ARGS
+ubuntu@kubeminion-01:~$ 
+```
+
+Restart the kubelet
+
+```
+ubuntu@kubeminion-01:~$ sudo systemctl daemon-reload
+ubuntu@kubeminion-01:~$ sudo systemctl restart kubelet
+```
+
+Verify that --enable-controller-attach-detach=false is set on the kubelet
+
+```
+ubuntu@kubeminion-01:~$ ps -auxwww | grep kubelet
+root      4238  7.9  6.9 487768 70416 ?        Ssl  17:21   0:00 /usr/bin/kubelet --kubeconfig=/etc/kubernetes/kubelet.conf --require-kubeconfig=true --pod-manifest-path=/etc/kubernetes/manifests --allow-privileged=true --network-plugin=cni --cni-conf-dir=/etc/cni/net.d --cni-bin-dir=/opt/cni/bin --cluster-dns=10.96.0.10 --cluster-domain=cluster.local --authorization-mode=Webhook --client-ca-file=/etc/kubernetes/pki/ca.crt --enable-controller-attach-detach=false
+
+```
