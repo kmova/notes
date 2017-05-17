@@ -23,7 +23,13 @@ sudo vagrant destroy
 Creating Vagrant Boxes
 ```
 vagrant package --output /path/to/<boxname>.box
-vagrant box add /atlast/path/<boxname> /path/to/<boxname>.box
+vagrant box remove atlas-path/<boxname>
+vagrant box add atlas-path/<boxname> /path/to/<boxname>.box
+
+Example:
+vagrant package --output k8s-1.6.2-2017050901.box
+vagrant box remove openebs/k8s-1.6
+vagrant box add --name openebs/k8s-1.6 k8s-1.6.2-2017050901.box 
 ```
 
 #Reference
