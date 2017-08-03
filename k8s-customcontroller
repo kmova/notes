@@ -1,0 +1,4 @@
+* https://resources.coreos.com/youtube-coreos-fest-2017/writing-a-custom-controller-extending-the-functionality-of-your-cluster
+* https://github.com/kubernetes/ingress/tree/master/examples/custom-controller
+* https://github.com/IanLewis/homepage/tree/master/cron
+* https://github.com/aaronlevy/kube-controller-demo
