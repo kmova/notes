@@ -46,3 +46,11 @@ Now run the following in the same vim editor:
 You should see the dependent go binaries downloaded and installed in your GOPATH/bin
 
 
+## Using vim-go
+
+The vim-go repository provides a large number of additional plugins and shortcuts that can be added to the .vimrc. However, with the default .vimrc use above you can already get going:
+- Initiate the build ":GoBuild"
+- Navigate to the definition "ctrl-{"
+- Navigate back "ctrl-o"
+
+
