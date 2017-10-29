@@ -54,3 +54,8 @@ git rebase upstream/master
 #Commit your changes
 git push -f
 ```
+
+## Sqash commits using rebase
+git rebase -i d04b4c59fe5ba484b4d10b1eaf32428329265b15
+git status
+git push -f
