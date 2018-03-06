@@ -56,6 +56,21 @@ git push -f
 ```
 
 ## Sqash commits using rebase
+```
+#specify the start commit id
+#launches a editor - where you can select to "squash" or "pick" 
 git rebase -i d04b4c59fe5ba484b4d10b1eaf32428329265b15
+#should show that local branch has diverged from upstream
 git status
 git push -f
+```
+
+
+## Amend commit messages
+```
+git commit --amend
+#modify the message in the editor
+#should show that 1 commit on local branch has diverged from upstream
+git status
+git push -f
+```
