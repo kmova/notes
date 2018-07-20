@@ -74,3 +74,11 @@ git commit --amend
 git status
 git push -f
 ```
+
+## Create branch from tag
+```
+git tag #check the tags
+git branch -r #check the branches
+git checkout -b v0.6 0.6.0
+git push --set-upstream origin v0.6
+```
