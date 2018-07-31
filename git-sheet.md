@@ -3,8 +3,8 @@
 cd <code-base-dir>
 git clone <git-project-url>
 cd git-project
-git config --global user.name "kiranmova"
-git config --global user.email "kiran.mova@cloudbyteinc.com"
+git config --global user.name "kmova"
+git config --global user.email "kiran.mova@mayadata.io"
 git config --global core.pager "less -r" 
 git config -l
 ```
