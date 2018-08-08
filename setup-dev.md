@@ -49,4 +49,11 @@ chmod 700 get_helm.sh
 ~/go/src/github.com/kmova/bootstrap/gke-gcloud/setup.sh
 ```
 
-
+```
+# Add to ~/.bash_aliases
+# src aliases
+alias cdgbs='cd $GOPATH/src/github.com/kmova/bootstrap/'
+alias cdgmaya='cd $GOPATH/src/github.com/openebs/maya/'
+alias cdgprov='cd $GOPATH/src/github.com/kubernetes/external-storage/'
+alias cdgndm='cd $GOPATH/src/github.com/openebs/node-disk-manager/'
+```
