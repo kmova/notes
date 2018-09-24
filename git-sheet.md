@@ -82,3 +82,10 @@ git branch -r #check the branches
 git checkout -b v0.6 0.6.0
 git push --set-upstream origin v0.6
 ```
+
+## Syncing a new branch from upstream into forked repo
+```
+git fetch upstream v0.7.x:v0.7.x
+git checkout v0.7.x
+git push --set-upstream origin v0.7.x
+```
