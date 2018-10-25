@@ -31,6 +31,8 @@ cd
 #GOPATH=$HOME/go; export GOPATH
 #PATH=$PATH:$GOPATH/bin; export PATH
 #PATH=$PATH:"/home/kiran/go/src/github.com/kmova/bootstrap/git"
+#PATH="$HOME/go/src/github.com/kmova/bootstrap/gke-openebs/hack:$PATH"
+#PATH="$HOME/go/src/github.com/kmova/bootstrap/gke-gcloud:$PATH"
 ```
 
 ```
