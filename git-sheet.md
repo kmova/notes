@@ -89,3 +89,8 @@ git fetch upstream v0.7.x:v0.7.x
 git checkout v0.7.x
 git push --set-upstream origin v0.7.x
 ```
+
+## Install git-extras for working with commands like git changelog
+```
+sudo apt-get install git-extras
+```
