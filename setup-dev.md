@@ -3,6 +3,7 @@
 sudo apt-get update
 sudo apt-get install golang git psmisc jsonlint yamllint gcc curl socat
 sudo apt install docker.io
+#Add your user to the docker group. - sudo usermod -aG docker $USER
 sudo apt install open-iscsi
 ```
 
