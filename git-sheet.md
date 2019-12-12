@@ -89,6 +89,10 @@ git fetch upstream v0.7.x:v0.7.x
 git checkout v0.7.x
 git push --set-upstream origin v0.7.x
 ```
+## Getting git log
+```
+git log --pretty=format:'- %s (%h) (@%an)' --date=short  --since="1 month"
+```
 
 ## Install git-extras for working with commands like git changelog
 ```
