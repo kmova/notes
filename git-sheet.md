@@ -98,3 +98,19 @@ git log --pretty=format:'- %s (%h) (@%an)' --date=short  --since="1 month"
 ```
 sudo apt-get install git-extras
 ```
+
+
+## Migrate repo using filter-repo
+
+Example: migrate the subdirectories related to provisioner-localpv from existing repo github.com/openebs/maya to a new repo called github/com/kmova/dynamic-localpv-provisioner.
+
+```
+git clone --branch master --origin origin --progress -v https://github.com/openebs/maya.git
+cd maya/
+git filter-repo --path cmd/provisioner-localpv/ --path buildscripts/provisioner-localpv/
+git log
+git status
+git remote add origin https://github.com/kmova/dynamic-localpv-provisioner.git
+git branch -M develop
+git push -u origin develop
+```
