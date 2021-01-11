@@ -75,6 +75,13 @@ git status
 git push -f
 ```
 
+## Create new tag from current branch
+```
+git tag #check the tags
+git tag -a <tag-name>
+git push origin <tag-name>
+```
+
 ## Create branch from tag
 ```
 git tag #check the tags
