@@ -90,6 +90,13 @@ git checkout -b v0.6 0.6.0
 git push --set-upstream origin v0.6
 ```
 
+## Create branch from commit
+```
+git branch <new-branch-name> <commit-hash>
+git checkout <new-branch-name>
+git push --set-upstream origin <new-branch-name>
+```
+
 ## Syncing a new branch from upstream into forked repo
 ```
 git fetch upstream v0.7.x:v0.7.x
