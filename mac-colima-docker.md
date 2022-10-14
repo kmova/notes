@@ -12,7 +12,21 @@
  
   ```
   brew install docker
+  brew install docker-compose
+  brew install trviy
   ```
+  
+- Start Colima
+  ```
+  colima start
+  ```
+
+- Verify commnds
+  ```
+  docker images 
+  trivy image ...
+  ```
+
   
 - References 
   * https://docs.brew.sh/Installation
