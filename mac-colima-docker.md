@@ -20,6 +20,10 @@
   ```
   colima start
   ```
+- Configure Docker sock for tools like trivy to work
+  ```
+  sudo ln -sf $HOME/.colima/default/docker.sock /var/run/docker.sock
+  ```
 
 - Verify commnds
   ```
@@ -31,4 +35,5 @@
 - References 
   * https://docs.brew.sh/Installation
   * https://github.com/abiosoft/colima
+  * https://github.com/abiosoft/colima/blob/main/docs/FAQ.md
  
